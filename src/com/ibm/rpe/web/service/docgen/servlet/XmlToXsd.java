@@ -1,3 +1,11 @@
+/*******************************************************************************
+ * Licensed Materials - Property of IBM
+ * © Copyright IBM Corporation 2015. All Rights Reserved.
+ * 
+ * Note to U.S. Government Users Restricted Rights:
+ * Use, duplication or disclosure restricted by GSA ADP Schedule
+ * Contract with IBM Corp. 
+ *******************************************************************************/
 package com.ibm.rpe.web.service.docgen.servlet;
 
 import java.io.BufferedWriter;
@@ -26,66 +34,66 @@ import com.sun.jersey.api.client.ClientResponse;
 import com.sun.jersey.api.client.WebResource;
 
 /**
- * Servlet implementation class conversting xml to json
+ * Servlet implementation class converting xml to json
  */
 @Path("/xmltoxsd")
-public class XmlToXsd {
+public class XmlToXsd
+{
 
 	@GET
-	@Produces({ MediaType.APPLICATION_XML, MediaType.TEXT_PLAIN })
-	public Response convertXmlToJson(@Context HttpServletRequest request,
-			@QueryParam("url") String xmlUrl) throws Exception {
+	@Produces(
+	{ MediaType.APPLICATION_XML, MediaType.TEXT_PLAIN })
+	public Response convertXmlToJson(@Context HttpServletRequest request, @QueryParam("url") String xmlUrl)
+			throws Exception
+	{
 		String xsd = null;
-		try {
+		try
+		{
 			Client client = new Client();
-			WebResource service = client.resource(UriBuilder.fromUri(xmlUrl)
-					.build());
+			WebResource service = client.resource(UriBuilder.fromUri(xmlUrl).build());
 
-			// create the job
-			ClientResponse clientResponse = service.accept(
-					MediaType.APPLICATION_XML).get(ClientResponse.class);
-			if (Response.Status.OK.getStatusCode() != clientResponse
-					.getStatus()) {
-				// return Response.serverError().status(Status.BAD_REQUEST)
-				// .entity(clientResponse.getEntity(String.class)).build();
+			ClientResponse clientResponse = service.accept(MediaType.APPLICATION_XML).get(ClientResponse.class);
+			if (Response.Status.OK.getStatusCode() != clientResponse.getStatus())
+			{
+				return Response.serverError().status(Status.BAD_REQUEST).entity(clientResponse.getEntity(String.class)).build();
 			}
-			InputStream is = clientResponse.getEntityInputStream();
-			String inputXml = FileUtils.getStringFromInputStream(is);
-			System.out.println(inputXml);
-			String output_file = "C:\\tmp\\results\\"
-					+ UUID.randomUUID().toString() + ".xsd";
-			String path = "C:\\tmp\\results\\" + UUID.randomUUID().toString()
-					+ ".xml";
-			FileWriter fileWritter = new FileWriter(path);
+			InputStream xmlFileInput = clientResponse.getEntityInputStream();
+			String xmlAsString = FileUtils.getStringFromInputStream(xmlFileInput);
+
+			String workingDirectory = System.getProperty("java.io.tmpdir") + "schema_" + UUID.randomUUID().toString() + File.separator; //$NON-NLS-1$ //$NON-NLS-2$
+
+			String xsdFilePath = workingDirectory + "xsd_" + UUID.randomUUID().toString() + ".xsd"; //$NON-NLS-1$ //$NON-NLS-2$
+			FileUtils.createFileParent(xsdFilePath);
+
+			String xmlFilePath = workingDirectory + "xsd_" + UUID.randomUUID().toString() + ".xml"; //$NON-NLS-1$ //$NON-NLS-2$
+			FileWriter fileWritter = new FileWriter(xmlFilePath);
 			BufferedWriter bufferWritter = new BufferedWriter(fileWritter);
-			String s = new String(inputXml.getBytes(), "UTF-8");// force to
-																// convert UTF-8
-																// standard will
-																// address
-																// this
-																// issue Invalid
-																// byte 1 of
-																// 1-byte
-																// UTF-8
-																// sequence
-			try {
+			String s = new String(xmlAsString.getBytes(), "UTF-8"); //$NON-NLS-1$
+			try
+			{
 				bufferWritter.write(s);
-			} finally {
+			}
+			finally
+			{
 				bufferWritter.close();
 			}
-			try {
-				XsdGeneration.generateXSD(path, output_file);
-			} catch (Exception e2) {
+			try
+			{
+				XsdGeneration.generateXSD(xmlFilePath, xsdFilePath);
+			}
+			catch (Exception e2)
+			{
 				e2.printStackTrace();
 			}
 			// return Response.ok().build();
-			xsd = ExportUtil.readFile(new File(output_file));
+			xsd = ExportUtil.readFile(new File(xsdFilePath));
+			// TODO Delete workingDirectory directory
 			return Response.ok().entity(xsd).build();
-		} catch (Exception e) {
+		}
+		catch (Exception e)
+		{
 			e.printStackTrace();
-			return Response.serverError().status(Status.BAD_REQUEST)
-					.entity(JSONUtils.writeValue(e.getLocalizedMessage()))
-					.build();
+			return Response.serverError().status(Status.BAD_REQUEST).entity(JSONUtils.writeValue(e.getLocalizedMessage())).build();
 		}
 	}
 }
