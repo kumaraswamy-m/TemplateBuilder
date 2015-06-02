@@ -1,0 +1,428 @@
+<element id="%ELEMENT_ID%" recursive="0" recursive_segments="1" tag="row">
+<assignments/>
+<element id="%ELEMENT_ID%" recursive="0" recursive_segments="1" tag="cell">
+<assignments/>
+<element id="%ELEMENT_ID%" recursive="0" recursive_segments="1" tag="text">
+<assignments/>
+<expression tag="content" type="constant">%PARAGRAPH_ATTRIBUTE_LABEL% </expression>
+<feature tag="format">
+<feature tag="common">
+<property name="style name" value=""/>
+<property name="masterpage" value=""/>
+<property name="force page change" value=""/>
+<property name="heading level offset" value=""/>
+<property name="target region" value=""/>
+</feature>
+<feature tag="date">
+<property name="date pattern" value=""/>
+</feature>
+<feature tag="data">
+<property name="data formatting" value=""/>
+</feature>
+<feature tag="list">
+<property name="list indent" value=""/>
+</feature>
+<feature tag="image">
+<feature tag="image size">
+<property name="image width" value=""/>
+<property name="image height" value=""/>
+<property name="image max width" value=""/>
+<property name="image max height" value=""/>
+</feature>
+</feature>
+<feature tag="font">
+<property name="font color" value=""/>
+<property name="font size" value=""/>
+<property name="font family" value=""/>
+<property name="bold" value="true"/>
+<property name="italic" value=""/>
+<property name="direction" value=""/>
+</feature>
+<feature tag="character">
+<property name="character spacing" value=""/>
+<property name="character position" value=""/>
+<property name="character kerning" value=""/>
+<property name="character scale" value=""/>
+</feature>
+<feature tag="effects">
+<property name="superscript" value=""/>
+<property name="subscript" value=""/>
+<property name="shadow" value=""/>
+<property name="outline" value=""/>
+<property name="emboss" value=""/>
+<property name="engrave" value=""/>
+<property name="small caps" value=""/>
+<property name="hidden" value=""/>
+<property name="all caps" value=""/>
+</feature>
+<feature tag="line">
+<property name="underline" value=""/>
+<property name="underline color" value=""/>
+<property name="overline" value=""/>
+<property name="strikethrough" value=""/>
+</feature>
+<feature tag="border">
+<feature tag="border margin">
+<property name="all borders margin" value=""/>
+<property name="right border margin" value=""/>
+<property name="left border margin" value=""/>
+</feature>
+<feature tag="border color">
+<property name="all borders color" value=""/>
+<property name="top border color" value=""/>
+<property name="right border color" value=""/>
+<property name="bottom border color" value=""/>
+<property name="left border color" value=""/>
+</feature>
+<feature tag="border style">
+<property name="all borders style" value=""/>
+<property name="top border style" value=""/>
+<property name="right border style" value=""/>
+<property name="bottom border style" value=""/>
+<property name="left border style" value=""/>
+</feature>
+<feature tag="border width">
+<property name="all borders width" value=""/>
+<property name="top border width" value=""/>
+<property name="right border width" value=""/>
+<property name="bottom border width" value=""/>
+<property name="left border width" value=""/>
+</feature>
+</feature>
+<feature tag="color">
+<property name="text background color" value=""/>
+</feature>
+</feature>
+<feature tag="metadata">
+<property name="name" value=""/>
+<property name="description">
+<expression type="constant"/>
+</property>
+</feature>
+</element>
+<feature tag="format">
+<feature tag="common">
+<property name="style name" value=""/>
+</feature>
+<feature tag="specific">
+<property name="cell alignment" value=""/>
+<property name="cell width" value=""/>
+<property name="row span" value=""/>
+<property name="col span" value=""/>
+<property name="text orientation" value=""/>
+</feature>
+<feature tag="font">
+<property name="font color" value=""/>
+<property name="font size" value=""/>
+<property name="font family" value=""/>
+<property name="bold" value=""/>
+<property name="italic" value=""/>
+<property name="direction" value=""/>
+</feature>
+<feature tag="character">
+<property name="character spacing" value=""/>
+<property name="character position" value=""/>
+<property name="character kerning" value=""/>
+<property name="character scale" value=""/>
+</feature>
+<feature tag="effects">
+<property name="superscript" value=""/>
+<property name="subscript" value=""/>
+<property name="shadow" value=""/>
+<property name="outline" value=""/>
+<property name="emboss" value=""/>
+<property name="engrave" value=""/>
+<property name="small caps" value=""/>
+<property name="hidden" value=""/>
+<property name="all caps" value=""/>
+</feature>
+<feature tag="line">
+<property name="underline" value=""/>
+<property name="underline color" value=""/>
+<property name="overline" value=""/>
+<property name="strikethrough" value=""/>
+</feature>
+<feature tag="border">
+<feature tag="border color">
+<property name="all borders color" value=""/>
+<property name="top border color" value=""/>
+<property name="right border color" value=""/>
+<property name="bottom border color" value=""/>
+<property name="left border color" value=""/>
+</feature>
+<feature tag="border style">
+<property name="all borders style" value=""/>
+<property name="top border style" value=""/>
+<property name="right border style" value=""/>
+<property name="bottom border style" value=""/>
+<property name="left border style" value=""/>
+</feature>
+<feature tag="border width">
+<property name="all borders width" value=""/>
+<property name="top border width" value=""/>
+<property name="right border width" value=""/>
+<property name="bottom border width" value=""/>
+<property name="left border width" value=""/>
+</feature>
+</feature>
+<feature tag="cell text padding">
+<property name="all cell text paddings" value=""/>
+<property name="cell text top padding" value=""/>
+<property name="cell text right padding" value=""/>
+<property name="cell text bottom padding" value=""/>
+<property name="cell text left padding" value=""/>
+</feature>
+<feature tag="color">
+<property name="cell background color" value=""/>
+<property name="cell foreground color" value=""/>
+<property name="cell foreground density" value=""/>
+</feature>
+</feature>
+<feature tag="metadata">
+<property name="name" value=""/>
+<property name="description">
+<expression type="constant"/>
+</property>
+</feature>
+</element>
+<element id="%ELEMENT_ID%" recursive="0" recursive_segments="1" tag="cell">
+<assignments/>
+<element id="%ELEMENT_ID%" recursive="0" recursive_segments="1" tag="text">
+<assignments/>
+<expression context="$4" tag="content" type="data">
+<!--<isElement>-->%PARAGRAPH_ATTRIBUTE_QUERY%</expression>
+<feature tag="format">
+<feature tag="common">
+<property name="style name" value=""/>
+<property name="masterpage" value=""/>
+<property name="force page change" value=""/>
+<property name="heading level offset" value=""/>
+<property name="target region" value=""/>
+</feature>
+<feature tag="date">
+<property name="date pattern" value=""/>
+</feature>
+<feature tag="data">
+<property name="data formatting" value=""/>
+</feature>
+<feature tag="list">
+<property name="list indent" value=""/>
+</feature>
+<feature tag="image">
+<feature tag="image size">
+<property name="image width" value=""/>
+<property name="image height" value=""/>
+<property name="image max width" value=""/>
+<property name="image max height" value=""/>
+</feature>
+</feature>
+<feature tag="font">
+<property name="font color" value=""/>
+<property name="font size" value=""/>
+<property name="font family" value=""/>
+<property name="bold" value=""/>
+<property name="italic" value=""/>
+<property name="direction" value=""/>
+</feature>
+<feature tag="character">
+<property name="character spacing" value=""/>
+<property name="character position" value=""/>
+<property name="character kerning" value=""/>
+<property name="character scale" value=""/>
+</feature>
+<feature tag="effects">
+<property name="superscript" value=""/>
+<property name="subscript" value=""/>
+<property name="shadow" value=""/>
+<property name="outline" value=""/>
+<property name="emboss" value=""/>
+<property name="engrave" value=""/>
+<property name="small caps" value=""/>
+<property name="hidden" value=""/>
+<property name="all caps" value=""/>
+</feature>
+<feature tag="line">
+<property name="underline" value=""/>
+<property name="underline color" value=""/>
+<property name="overline" value=""/>
+<property name="strikethrough" value=""/>
+</feature>
+<feature tag="border">
+<feature tag="border margin">
+<property name="all borders margin" value=""/>
+<property name="right border margin" value=""/>
+<property name="left border margin" value=""/>
+</feature>
+<feature tag="border color">
+<property name="all borders color" value=""/>
+<property name="top border color" value=""/>
+<property name="right border color" value=""/>
+<property name="bottom border color" value=""/>
+<property name="left border color" value=""/>
+</feature>
+<feature tag="border style">
+<property name="all borders style" value=""/>
+<property name="top border style" value=""/>
+<property name="right border style" value=""/>
+<property name="bottom border style" value=""/>
+<property name="left border style" value=""/>
+</feature>
+<feature tag="border width">
+<property name="all borders width" value=""/>
+<property name="top border width" value=""/>
+<property name="right border width" value=""/>
+<property name="bottom border width" value=""/>
+<property name="left border width" value=""/>
+</feature>
+</feature>
+<feature tag="color">
+<property name="text background color" value=""/>
+</feature>
+</feature>
+<feature tag="metadata">
+<property name="name" value=""/>
+<property name="description">
+<expression type="constant"/>
+</property>
+</feature>
+</element>
+<feature tag="format">
+<feature tag="common">
+<property name="style name" value=""/>
+</feature>
+<feature tag="specific">
+<property name="cell alignment" value=""/>
+<property name="cell width" value=""/>
+<property name="row span" value=""/>
+<property name="col span" value=""/>
+<property name="text orientation" value=""/>
+</feature>
+<feature tag="font">
+<property name="font color" value=""/>
+<property name="font size" value=""/>
+<property name="font family" value=""/>
+<property name="bold" value=""/>
+<property name="italic" value=""/>
+<property name="direction" value=""/>
+</feature>
+<feature tag="character">
+<property name="character spacing" value=""/>
+<property name="character position" value=""/>
+<property name="character kerning" value=""/>
+<property name="character scale" value=""/>
+</feature>
+<feature tag="effects">
+<property name="superscript" value=""/>
+<property name="subscript" value=""/>
+<property name="shadow" value=""/>
+<property name="outline" value=""/>
+<property name="emboss" value=""/>
+<property name="engrave" value=""/>
+<property name="small caps" value=""/>
+<property name="hidden" value=""/>
+<property name="all caps" value=""/>
+</feature>
+<feature tag="line">
+<property name="underline" value=""/>
+<property name="underline color" value=""/>
+<property name="overline" value=""/>
+<property name="strikethrough" value=""/>
+</feature>
+<feature tag="border">
+<feature tag="border color">
+<property name="all borders color" value=""/>
+<property name="top border color" value=""/>
+<property name="right border color" value=""/>
+<property name="bottom border color" value=""/>
+<property name="left border color" value=""/>
+</feature>
+<feature tag="border style">
+<property name="all borders style" value=""/>
+<property name="top border style" value=""/>
+<property name="right border style" value=""/>
+<property name="bottom border style" value=""/>
+<property name="left border style" value=""/>
+</feature>
+<feature tag="border width">
+<property name="all borders width" value=""/>
+<property name="top border width" value=""/>
+<property name="right border width" value=""/>
+<property name="bottom border width" value=""/>
+<property name="left border width" value=""/>
+</feature>
+</feature>
+<feature tag="cell text padding">
+<property name="all cell text paddings" value=""/>
+<property name="cell text top padding" value=""/>
+<property name="cell text right padding" value=""/>
+<property name="cell text bottom padding" value=""/>
+<property name="cell text left padding" value=""/>
+</feature>
+<feature tag="color">
+<property name="cell background color" value=""/>
+<property name="cell foreground color" value=""/>
+<property name="cell foreground density" value=""/>
+</feature>
+</feature>
+<feature tag="metadata">
+<property name="name" value=""/>
+<property name="description">
+<expression type="constant"/>
+</property>
+</feature>
+</element>
+<feature tag="format">
+<feature tag="common">
+<property name="style name" value=""/>
+</feature>
+<feature tag="specific">
+<property name="row break across pages" value="true"/>
+<property name="row repeat at page begining" value="false"/>
+<property name="once per table" value="false"/>
+<property name="remove if empty" value="false"/>
+</feature>
+<feature tag="size">
+<property name="row height" value=""/>
+<property name="row height specifier" value=""/>
+</feature>
+<feature tag="font">
+<property name="font color" value=""/>
+<property name="font size" value=""/>
+<property name="font family" value=""/>
+<property name="bold" value=""/>
+<property name="italic" value=""/>
+</feature>
+<feature tag="character">
+<property name="character spacing" value=""/>
+<property name="character position" value=""/>
+<property name="character kerning" value=""/>
+<property name="character scale" value=""/>
+</feature>
+<feature tag="effects">
+<property name="superscript" value=""/>
+<property name="subscript" value=""/>
+<property name="shadow" value=""/>
+<property name="outline" value=""/>
+<property name="emboss" value=""/>
+<property name="engrave" value=""/>
+<property name="small caps" value=""/>
+<property name="hidden" value=""/>
+<property name="all caps" value=""/>
+</feature>
+<feature tag="line">
+<property name="underline" value=""/>
+<property name="underline color" value=""/>
+<property name="overline" value=""/>
+<property name="strikethrough" value=""/>
+</feature>
+<feature tag="color">
+<property name="row background color" value=""/>
+</feature>
+</feature>
+<feature tag="metadata">
+<property name="name" value=""/>
+<property name="description">
+<expression type="constant"/>
+</property>
+</feature>
+</element>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<report>
+   <feature tag="Config" />
+   <feature tag="Runtime">
+      <feature tag="Metadata">
+         <property name="date" type="date" editable="false" visible="true" required="false" value="Mar 16, 2015" />
+         <property name="time" type="time" editable="false" visible="true" required="false" value="8:24:49 AM" />
+         <property name="client" editable="false" visible="true" required="false" value="Rational Publishing Engine" />
+         <property name="machine" editable="false" visible="true" required="false" value="KUMARASWAMYM1-L" />
+         <property name="build" editable="false" visible="true" required="false" value="20141002_1151" />
+         <property name="version" editable="false" visible="true" required="false" value="1" />
+         <property name="name" editable="true" visible="true" required="false" value="" />
+         <property name="description" editable="true" visible="true" required="false" value="" />
+         <property name="data formatting" editable="true" visible="true" required="false" value="mixed" />
+         <property name="missing data text" editable="true" visible="true" required="false" value="&lt;data attribute not found&gt;" />
+         <property name="no data access text" editable="true" visible="true" required="false" value="&lt;No Access&gt;" />
+         <property name="date pattern" editable="true" visible="true" required="false" value="yyyy-MM-dd" />
+         <property name="time pattern" editable="true" visible="true" required="false" value="HH:mm:ss" />
+         <property name="dateTime pattern" editable="true" visible="true" required="false" value="yyyy-MM-dd HH:mm:ss" />
+         <property name="output locale" editable="true" visible="true" required="false" value="" />
+         <property name="image max width" editable="true" visible="true" required="false" value="" />
+         <property name="image max height" editable="true" visible="true" required="false" value="" />
+         <property name="OLEs as static images" type="boolean" editable="true" visible="true" required="false" value="true" />
+         <property name="clean referenced files" type="boolean" editable="true" visible="true" required="false" value="false" />
+         <property name="ignore data source configuration errors" type="boolean" editable="true" visible="true" required="false" value="false" />
+         <property name="non Unicode fonts" editable="true" visible="true" required="false" value="" />
+         <property name="pre-command" editable="true" visible="true" required="false" value="" />
+         <property name="stop on pre-command failure" type="boolean" editable="true" visible="true" required="false" value="false" />
+         <property name="post-command" editable="true" visible="true" required="false" value="" />
+         <property name="data read ahead" type="boolean" editable="true" visible="true" required="false" value="false" />
+         <property name="data request retry count" editable="true" visible="true" required="false" value="0" />
+         <property name="data request retry interval" editable="true" visible="true" required="false" value="3000" />
+         <property name="bidi" type="boolean" editable="true" visible="true" required="false" value="false" />
+         <property name="document direction" editable="true" visible="true" required="false" value="" />
+         <property name="text direction" editable="true" visible="true" required="false" value="" />
+      </feature>
+      <feature tag="Output">
+         <feature tag="Target">
+            <property name="type" editable="false" visible="true" required="false" value="Html" />
+            <property name="driver" editable="false" visible="true" required="false" value="Telelogic.Html.Driver" />
+            <property name="numbered headings" type="boolean" editable="true" visible="true" required="false" value="true" />
+            <property name="split" type="boolean" editable="true" visible="true" required="false" value="false" />
+            <property name="max files per folder" editable="true" visible="true" required="false" value="500" />
+            <property name="path" type="URI" editable="true" visible="true" required="true" value="" />
+            <property name="stylesheet" type="URI" editable="true" visible="true" required="false" value="" />
+            <property name="username" editable="true" visible="true" required="false" value="" />
+            <property name="password" type="password" editable="true" visible="true" required="false" value="" />
+            <property name="authentication" type="authentication" editable="true" visible="true" required="false" value="" />
+            <property name="accept header" editable="true" visible="true" required="false" value="" />
+            <property name="prefix" editable="true" visible="true" required="false" value="" />
+            <property name="extension" editable="false" visible="false" required="false" value="htm" />
+            <property name="bidi" type="boolean" editable="true" visible="true" required="false" value="false" />
+            <property name="Create ToC Backlink" type="boolean" editable="true" visible="true" required="false" value="false" />
+         </feature>
+         <feature tag="Target">
+            <property name="type" editable="false" visible="true" required="false" value="Word" />
+            <property name="driver" editable="false" visible="true" required="false" value="Telelogic.Word.Driver" />
+            <property name="path" type="URI" editable="true" visible="true" required="true" value="" />
+            <property name="document password" type="password" editable="true" visible="true" required="false" value="" />
+            <property name="stylesheet" type="URI" editable="true" visible="true" required="false" value="" />
+            <property name="username" editable="true" visible="true" required="false" value="" />
+            <property name="password" type="password" editable="true" visible="true" required="false" value="" />
+            <property name="authentication" type="authentication" editable="true" visible="true" required="false" value="" />
+            <property name="accept header" editable="true" visible="true" required="false" value="" />
+            <property name="macro" editable="true" visible="true" required="false" value="" />
+            <property name="extension" editable="false" visible="false" required="false" value="doc" />
+            <property name="bidi" type="boolean" editable="true" visible="true" required="false" value="false" />
+            <property name="update fields" type="boolean" editable="true" visible="true" required="false" value="true" />
+            <property name="exclude fields" editable="true" visible="true" required="false" value="" />
+            <property name="fit tables to page" type="boolean" editable="true" visible="true" required="false" value="false" />
+            <property name="multipart" editable="true" visible="true" required="false" value="" />
+         </feature>
+         <feature tag="Target">
+            <property name="type" editable="false" visible="true" required="false" value="PDF" />
+            <property name="driver" editable="false" visible="true" required="false" value="Telelogic.Pdf.Driver" />
+            <property name="path" type="URI" editable="true" visible="true" required="true" value="" />
+            <property name="document password" type="password" editable="true" visible="true" required="false" value="" />
+            <property name="PDF/A" type="boolean" editable="true" visible="false" required="false" value="" />
+            <property name="stylesheet" type="URI" editable="true" visible="true" required="false" value="" />
+            <property name="username" editable="true" visible="true" required="false" value="" />
+            <property name="password" type="password" editable="true" visible="true" required="false" value="" />
+            <property name="authentication" type="authentication" editable="true" visible="true" required="false" value="" />
+            <property name="accept header" editable="true" visible="true" required="false" value="" />
+            <property name="bidi" type="boolean" editable="true" visible="true" required="false" value="false" />
+            <property name="substitution font" editable="true" visible="true" required="false" value="" />
+            <property name="extension" editable="false" visible="false" required="false" value="pdf" />
+         </feature>
+         <feature tag="Target">
+            <property name="type" editable="false" visible="true" required="false" value="XslFo" />
+            <property name="driver" editable="false" visible="true" required="false" value="Telelogic.XslFo.Driver" />
+            <property name="numbered headings" type="boolean" editable="true" visible="true" required="false" value="true" />
+            <property name="path" type="URI" editable="true" visible="true" required="true" value="" />
+            <property name="extension" editable="false" visible="false" required="false" value="fo" />
+            <property name="bidi" type="boolean" editable="true" visible="true" required="false" value="false" />
+         </feature>
+      </feature>
+      <feature tag="Log" />
+      <feature tag="Templates">
+         <feature tag="Template">
+            <property name="path" editable="false" visible="true" required="false" value="%TEMPLATE_PATH_NAME%" />
+            <property name="validator" type="boolean" editable="true" visible="true" required="false" value="false" />
+            <property name="username" editable="true" visible="true" required="false" value="" />
+            <property name="password" type="password" editable="true" visible="true" required="false" value="" />
+            <property name="authentication" type="authentication" editable="true" visible="true" required="false" value="" />
+            <property name="translation" editable="true" visible="true" required="false" value="" />
+            <feature tag="Metadata">
+               <property name="version" editable="false" visible="true" required="false" value="2" />
+               <property name="name" editable="false" visible="true" required="false" value="college" />
+               <property name="description" type="expression" editable="false" visible="true" required="false" value="college" />
+               <property name="Query Separator" editable="false" visible="true" required="false" value="/" />
+            </feature>
+            <feature tag="Data sources">
+               <feature tag="Source">
+                  <property name="name" editable="false" visible="true" required="true" value="%QUERY_SCHEMA%" />
+                  <property name="description" editable="false" visible="true" required="true" value="" />
+                  <property name="type" editable="false" visible="true" required="true" value="Generic XML" />
+                  <property name="configuration required" editable="false" visible="true" required="false" value="" />
+                  <property name="driver" editable="true" visible="true" required="true" value="eval" />
+                  <property name="default URI" editable="false" visible="true" required="false" value="" />
+                  <property name="allow read ahead" type="boolean" editable="false" visible="true" required="false" value="true" />
+                  <property name="URI" type="URI" editable="true" visible="true" required="true" value="%DATA_SOURCE_URL%" />
+                  <property name="username" editable="true" visible="true" required="false" value="" />
+                  <property name="password" type="password" editable="true" visible="true" required="false" value="" />
+                  <property name="authentication" type="authentication" editable="true" visible="true" required="false" value="" />
+                  <property name="accept header" editable="true" visible="true" required="false" value="application/xml, */*" />
+                  <property name="command" editable="true" visible="true" required="false" value="" />
+                  <property name="ignored" type="boolean" editable="true" visible="true" required="false" value="false" />
+                  <property name="Configuration-Context" type="string" editable="true" visible="true" required="false" value="" />
+               </feature>
+            </feature>
+            <feature tag="Template variables" />
+         </feature>
+      </feature>
+   </feature>
+</report>

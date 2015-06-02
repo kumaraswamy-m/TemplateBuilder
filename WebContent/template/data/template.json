@@ -1,0 +1,31 @@
+{
+	"name": "Requirements",
+	"xmlPath": "https://rpe.mybluemix.net/rpeng/examples/data/requisitepro.xml",
+	"xsdPath": null,
+	"schema": "PRRequirements",
+	"query": "Project",
+	"title": "Requirements",
+	"toc": true,
+	"headerText": "Requirements",
+	"footerText": "Copyright",
+	"pageOrientation": "landscape",
+	"titleQuery": false,
+	"container": [{
+		"type": "table",
+		"query": "Project/Requirements/PRRequirement",
+		"title": "Requirements Table",
+		"titleStyle": "1",
+		"titleQuery": false,
+		"headerLabels": ["Full Tag", "Text", "Priority", "Changed"],
+		"queryAttributes": ["FullTag", "Text", "Priority", "Changed"]
+	},
+	{
+		"type": "paragraph",
+		"query": "Project/Requirements/PRRequirement",
+		"title": "GUID",
+		"titleStyle": "1",
+		"titleQuery": true,
+		"headerLabels": ["Text", "Priority", "Changed"],
+		"queryAttributes": ["Text", "Priority", "Changed"]
+	}]
+}

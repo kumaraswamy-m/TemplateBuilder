@@ -1,0 +1,55 @@
+{
+	"swagger": "2.0",
+	"info": {
+		"description": "A service based on RPE technology for generating document templates.",
+		"version": "1.0.0",
+		"title": "Template Generation as a Service",
+		"termsOfService": "http://www-03.ibm.com/software/sla/sladb.nsf/sla/saas",
+		"contact": {
+			"email": "test@test.com"
+		},
+		"license": {
+			"name": "Beta",
+			"url": "http://www-03.ibm.com/software/sla/sladb.nsf/sla/bla"
+		}
+	},
+	"basePath": "/rpet/api",
+	"tags": [{
+		"name": "builder",
+		"description": "Template builder to create document templates."
+	}],
+	"schemes": ["http"],
+	"paths": {
+		"template/create": {
+			"post": {
+				"tags": ["builder"],
+				"summary": "Create document template",
+				"description": "",
+				"operationId": "create",
+				"consumes": ["application/json"],
+				"produces": ["application/octet-stream"],
+				"parameters": [{
+					"name": "templateData",
+					"description": "The lists of templates to add/change/remove from the report.",
+					"in": "formData",
+					"type": "text",
+					"items": {
+						"schema": {
+							"$ref": "#/definitions/Template"
+						}
+					},
+					"required": true
+				}],
+				"responses": {
+					"400": {
+						"description": "Error message"
+					}
+				}
+			}
+		}
+	},
+	"externalDocs": {
+		"description": "Find out more about RPE",
+		"url": "http://www-03.ibm.com/software/products/en/ratipublengi"
+	}
+}

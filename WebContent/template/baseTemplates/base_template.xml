@@ -1,0 +1,1255 @@
+<template>
+<metadata>
+<property name="version" value="2"/>
+<property name="name" value=""/>
+<property name="description">
+<expression type="constant"/>
+</property>
+<property name="Query Separator" value="/"/>
+</metadata>
+<dataset>
+<sources>
+<source>
+<feature tag="definition">
+<property name="name" value="%SCHEMA_LABEL%"/>
+<property name="schema" value="%SCHEMA_LABEL%_schema"/>
+<property name="description">
+<expression type="constant"/>
+</property>
+<property name="default URI" value=""/>
+<property name="configuration required" value=""/>
+</feature>
+</source>
+</sources>
+<schemas>
+<schema>
+<feature tag="definition">
+<property name="id" value="%SCHEMA_LABEL%_schema"/>
+<property name="type" value="Generic XML"/>
+<property name="URI" value="schemas/schema/schema.xsd"/>
+</feature>
+</schema>
+</schemas>
+</dataset>
+<masterpages>
+<masterpage>
+<feature tag="definition">
+<property name="name" value="MP_1"/>
+<property name="default" value="false"/>
+<property name="description">
+<expression type="constant"/>
+</property>
+</feature>
+<element id="84" tag="content">
+<element id="8" recursive="0" recursive_segments="1" tag="header">
+<assignments/>
+<element id="28" recursive="0" recursive_segments="1" tag="text">
+<assignments/>
+<expression tag="content" type="constant">%MASTERPAGE_HEADER_TEXT%</expression>
+<feature tag="format">
+<feature tag="common">
+<property name="style name" value=""/>
+<property name="masterpage" value=""/>
+<property name="force page change" value=""/>
+<property name="heading level offset" value=""/>
+<property name="target region" value=""/>
+</feature>
+<feature tag="date">
+<property name="date pattern" value=""/>
+</feature>
+<feature tag="data">
+<property name="data formatting" value=""/>
+</feature>
+<feature tag="list">
+<property name="list indent" value=""/>
+</feature>
+<feature tag="image">
+<feature tag="image size">
+<property name="image width" value=""/>
+<property name="image height" value=""/>
+<property name="image max width" value=""/>
+<property name="image max height" value=""/>
+</feature>
+</feature>
+<feature tag="font">
+<property name="font color" value=""/>
+<property name="font size" value=""/>
+<property name="font family" value=""/>
+<property name="bold" value=""/>
+<property name="italic" value=""/>
+<property name="direction" value=""/>
+</feature>
+<feature tag="character">
+<property name="character spacing" value=""/>
+<property name="character position" value=""/>
+<property name="character kerning" value=""/>
+<property name="character scale" value=""/>
+</feature>
+<feature tag="effects">
+<property name="superscript" value=""/>
+<property name="subscript" value=""/>
+<property name="shadow" value=""/>
+<property name="outline" value=""/>
+<property name="emboss" value=""/>
+<property name="engrave" value=""/>
+<property name="small caps" value=""/>
+<property name="hidden" value=""/>
+<property name="all caps" value=""/>
+</feature>
+<feature tag="line">
+<property name="underline" value=""/>
+<property name="underline color" value=""/>
+<property name="overline" value=""/>
+<property name="strikethrough" value=""/>
+</feature>
+<feature tag="border">
+<feature tag="border margin">
+<property name="all borders margin" value=""/>
+<property name="right border margin" value=""/>
+<property name="left border margin" value=""/>
+</feature>
+<feature tag="border color">
+<property name="all borders color" value=""/>
+<property name="top border color" value=""/>
+<property name="right border color" value=""/>
+<property name="bottom border color" value=""/>
+<property name="left border color" value=""/>
+</feature>
+<feature tag="border style">
+<property name="all borders style" value=""/>
+<property name="top border style" value=""/>
+<property name="right border style" value=""/>
+<property name="bottom border style" value=""/>
+<property name="left border style" value=""/>
+</feature>
+<feature tag="border width">
+<property name="all borders width" value=""/>
+<property name="top border width" value=""/>
+<property name="right border width" value=""/>
+<property name="bottom border width" value=""/>
+<property name="left border width" value=""/>
+</feature>
+</feature>
+<feature tag="color">
+<property name="text background color" value=""/>
+</feature>
+</feature>
+<feature tag="metadata">
+<property name="name" value=""/>
+<property name="description">
+<expression type="constant"/>
+</property>
+</feature>
+</element>
+<feature tag="format">
+<feature tag="common">
+<property name="style name" value=""/>
+</feature>
+<feature tag="specific">
+<property name="header from top" value=""/>
+<property name="same as previous" value="false"/>
+</feature>
+<feature tag="font">
+<property name="font color" value=""/>
+<property name="font size" value=""/>
+<property name="font family" value=""/>
+<property name="bold" value=""/>
+<property name="italic" value=""/>
+</feature>
+<feature tag="character">
+<property name="character spacing" value=""/>
+<property name="character position" value=""/>
+<property name="character kerning" value=""/>
+<property name="character scale" value=""/>
+</feature>
+<feature tag="effects">
+<property name="superscript" value=""/>
+<property name="subscript" value=""/>
+<property name="shadow" value=""/>
+<property name="outline" value=""/>
+<property name="emboss" value=""/>
+<property name="engrave" value=""/>
+<property name="small caps" value=""/>
+<property name="hidden" value=""/>
+<property name="all caps" value=""/>
+</feature>
+<feature tag="line">
+<property name="underline" value=""/>
+<property name="underline color" value=""/>
+<property name="overline" value=""/>
+<property name="strikethrough" value=""/>
+</feature>
+</feature>
+<feature tag="metadata">
+<property name="name" value=""/>
+<property name="description">
+<expression type="constant"/>
+</property>
+</feature>
+</element>
+<element id="9" recursive="0" recursive_segments="1" tag="footer">
+<assignments/>
+<element id="22" recursive="0" recursive_segments="1" tag="paragraph">
+<assignments/>
+<element id="23" recursive="0" recursive_segments="1" tag="text">
+<assignments/>
+<expression tag="content" type="constant">Page </expression>
+<feature tag="format">
+<feature tag="common">
+<property name="style name" value=""/>
+<property name="masterpage" value=""/>
+<property name="force page change" value=""/>
+<property name="heading level offset" value=""/>
+<property name="target region" value=""/>
+</feature>
+<feature tag="date">
+<property name="date pattern" value=""/>
+</feature>
+<feature tag="data">
+<property name="data formatting" value=""/>
+</feature>
+<feature tag="list">
+<property name="list indent" value=""/>
+</feature>
+<feature tag="image">
+<feature tag="image size">
+<property name="image width" value=""/>
+<property name="image height" value=""/>
+<property name="image max width" value=""/>
+<property name="image max height" value=""/>
+</feature>
+</feature>
+<feature tag="font">
+<property name="font color" value=""/>
+<property name="font size" value=""/>
+<property name="font family" value=""/>
+<property name="bold" value=""/>
+<property name="italic" value=""/>
+<property name="direction" value=""/>
+</feature>
+<feature tag="character">
+<property name="character spacing" value=""/>
+<property name="character position" value=""/>
+<property name="character kerning" value=""/>
+<property name="character scale" value=""/>
+</feature>
+<feature tag="effects">
+<property name="superscript" value=""/>
+<property name="subscript" value=""/>
+<property name="shadow" value=""/>
+<property name="outline" value=""/>
+<property name="emboss" value=""/>
+<property name="engrave" value=""/>
+<property name="small caps" value=""/>
+<property name="hidden" value=""/>
+<property name="all caps" value=""/>
+</feature>
+<feature tag="line">
+<property name="underline" value=""/>
+<property name="underline color" value=""/>
+<property name="overline" value=""/>
+<property name="strikethrough" value=""/>
+</feature>
+<feature tag="border">
+<feature tag="border margin">
+<property name="all borders margin" value=""/>
+<property name="right border margin" value=""/>
+<property name="left border margin" value=""/>
+</feature>
+<feature tag="border color">
+<property name="all borders color" value=""/>
+<property name="top border color" value=""/>
+<property name="right border color" value=""/>
+<property name="bottom border color" value=""/>
+<property name="left border color" value=""/>
+</feature>
+<feature tag="border style">
+<property name="all borders style" value=""/>
+<property name="top border style" value=""/>
+<property name="right border style" value=""/>
+<property name="bottom border style" value=""/>
+<property name="left border style" value=""/>
+</feature>
+<feature tag="border width">
+<property name="all borders width" value=""/>
+<property name="top border width" value=""/>
+<property name="right border width" value=""/>
+<property name="bottom border width" value=""/>
+<property name="left border width" value=""/>
+</feature>
+</feature>
+<feature tag="color">
+<property name="text background color" value=""/>
+</feature>
+</feature>
+<feature tag="metadata">
+<property name="name" value=""/>
+<property name="description">
+<expression type="constant"/>
+</property>
+</feature>
+</element>
+<element id="24" recursive="0" recursive_segments="1" tag="page number">
+<assignments/>
+<feature tag="format">
+<feature tag="common">
+<property name="target region" value=""/>
+</feature>
+<feature tag="specific">
+<property name="field type" value="page number"/>
+<property name="field code" value=""/>
+<property name="page numbering style" value=""/>
+<property name="page starting number" value=""/>
+<property name="restart page numbering" value=""/>
+</feature>
+<feature tag="font">
+<property name="font color" value=""/>
+<property name="font size" value=""/>
+<property name="font family" value=""/>
+<property name="bold" value=""/>
+<property name="italic" value=""/>
+</feature>
+<feature tag="character">
+<property name="character spacing" value=""/>
+<property name="character position" value=""/>
+<property name="character kerning" value=""/>
+<property name="character scale" value=""/>
+</feature>
+<feature tag="effects">
+<property name="superscript" value=""/>
+<property name="subscript" value=""/>
+<property name="shadow" value=""/>
+<property name="outline" value=""/>
+<property name="emboss" value=""/>
+<property name="engrave" value=""/>
+<property name="small caps" value=""/>
+<property name="hidden" value=""/>
+<property name="all caps" value=""/>
+</feature>
+<feature tag="line">
+<property name="underline" value=""/>
+<property name="underline color" value=""/>
+<property name="overline" value=""/>
+<property name="strikethrough" value=""/>
+</feature>
+<feature tag="border">
+<feature tag="border margin">
+<property name="all borders margin" value=""/>
+<property name="right border margin" value=""/>
+<property name="left border margin" value=""/>
+</feature>
+<feature tag="border color">
+<property name="all borders color" value=""/>
+<property name="top border color" value=""/>
+<property name="right border color" value=""/>
+<property name="bottom border color" value=""/>
+<property name="left border color" value=""/>
+</feature>
+<feature tag="border style">
+<property name="all borders style" value=""/>
+<property name="top border style" value=""/>
+<property name="right border style" value=""/>
+<property name="bottom border style" value=""/>
+<property name="left border style" value=""/>
+</feature>
+<feature tag="border width">
+<property name="all borders width" value=""/>
+<property name="top border width" value=""/>
+<property name="right border width" value=""/>
+<property name="bottom border width" value=""/>
+<property name="left border width" value=""/>
+</feature>
+</feature>
+<feature tag="color">
+<property name="text background color" value=""/>
+</feature>
+</feature>
+<feature tag="metadata">
+<property name="name" value=""/>
+<property name="description">
+<expression type="constant"/>
+</property>
+</feature>
+</element>
+<feature tag="format">
+<feature tag="common">
+<property name="style name" value=""/>
+<property name="masterpage" value=""/>
+<property name="force page change" value=""/>
+<property name="heading level offset" value=""/>
+<property name="target region" value=""/>
+</feature>
+<feature tag="font">
+<property name="font color" value=""/>
+<property name="font size" value=""/>
+<property name="font family" value=""/>
+<property name="bold" value=""/>
+<property name="italic" value=""/>
+<property name="direction" value=""/>
+</feature>
+<feature tag="character">
+<property name="character spacing" value=""/>
+<property name="character position" value=""/>
+<property name="character kerning" value=""/>
+<property name="character scale" value=""/>
+</feature>
+<feature tag="effects">
+<property name="superscript" value=""/>
+<property name="subscript" value=""/>
+<property name="shadow" value=""/>
+<property name="outline" value=""/>
+<property name="emboss" value=""/>
+<property name="engrave" value=""/>
+<property name="small caps" value=""/>
+<property name="hidden" value=""/>
+<property name="all caps" value=""/>
+</feature>
+<feature tag="line">
+<property name="underline" value=""/>
+<property name="underline color" value=""/>
+<property name="overline" value=""/>
+<property name="strikethrough" value=""/>
+</feature>
+<feature tag="border">
+<feature tag="border margin">
+<property name="all borders margin" value=""/>
+<property name="top border margin" value=""/>
+<property name="right border margin" value=""/>
+<property name="bottom border margin" value=""/>
+<property name="left border margin" value=""/>
+</feature>
+<feature tag="border color">
+<property name="all borders color" value=""/>
+<property name="top border color" value=""/>
+<property name="right border color" value=""/>
+<property name="bottom border color" value=""/>
+<property name="left border color" value=""/>
+</feature>
+<feature tag="border style">
+<property name="all borders style" value=""/>
+<property name="top border style" value=""/>
+<property name="right border style" value=""/>
+<property name="bottom border style" value=""/>
+<property name="left border style" value=""/>
+</feature>
+<feature tag="border width">
+<property name="all borders width" value=""/>
+<property name="top border width" value=""/>
+<property name="right border width" value=""/>
+<property name="bottom border width" value=""/>
+<property name="left border width" value=""/>
+</feature>
+</feature>
+<feature tag="padding">
+<property name="all paragraph paddings" value=""/>
+<property name="top paragraph padding" value=""/>
+<property name="right paragraph padding" value=""/>
+<property name="bottom paragraph padding" value=""/>
+<property name="left paragraph padding" value=""/>
+</feature>
+<feature tag="color">
+<property name="paragraph background color" value=""/>
+<property name="paragraph foreground color" value=""/>
+<property name="paragraph foreground density" value=""/>
+</feature>
+<feature tag="alignment">
+<property name="paragraph alignment" value=""/>
+</feature>
+<feature tag="indentation">
+<property name="first line indent" value=""/>
+<property name="hanging indent" value=""/>
+<property name="left indent" value=""/>
+<property name="right indent" value=""/>
+</feature>
+<feature tag="pagination">
+<property name="widow/orphan control" value=""/>
+<property name="keep lines togheter" value=""/>
+<property name="keep with next" value=""/>
+<property name="page break before" value=""/>
+</feature>
+<feature tag="spacing">
+<property name="before spacing" value=""/>
+<property name="after spacing" value=""/>
+<property name="multiple line spacing" value=""/>
+<property name="word space" value=""/>
+<property name="same style paragraph spacing" value=""/>
+</feature>
+<feature tag="level">
+<property name="level number" value=""/>
+<property name="level indent" value=""/>
+</feature>
+<feature tag="numbering">
+<feature tag="numbering common">
+<property name="numbering restart" value=""/>
+<property name="numbering style" value=""/>
+<property name="numbering alignment" value=""/>
+<property name="numbering indent" value=""/>
+</feature>
+<feature tag="numbering font">
+<property name="numbering font color" value=""/>
+<property name="numbering font size" value=""/>
+<property name="numbering font family" value=""/>
+<property name="numbering bold" value=""/>
+<property name="numbering italic" value=""/>
+</feature>
+<feature tag="numbering character">
+<property name="numbering character position" value=""/>
+<property name="numbering character spacing" value=""/>
+<property name="numbering character scale" value=""/>
+<property name="numbering character kerning" value=""/>
+</feature>
+<feature tag="numbering effects">
+<property name="numbering superscript" value=""/>
+<property name="numbering subscript" value=""/>
+<property name="numbering shadow" value=""/>
+<property name="numbering outline" value=""/>
+<property name="numbering emboss" value=""/>
+<property name="numbering engrave" value=""/>
+<property name="numbering small caps" value=""/>
+<property name="numbering hidden" value=""/>
+<property name="numbering all caps" value=""/>
+</feature>
+<feature tag="numbering line">
+<property name="numbering underline" value=""/>
+<property name="numbering underline color" value=""/>
+<property name="numbering overline" value=""/>
+<property name="numbering strikethrough" value=""/>
+</feature>
+</feature>
+</feature>
+<feature tag="metadata">
+<property name="name" value=""/>
+<property name="description">
+<expression type="constant"/>
+</property>
+</feature>
+</element>
+<element id="25" recursive="0" recursive_segments="1" tag="paragraph">
+<assignments/>
+<element id="26" recursive="0" recursive_segments="1" tag="text">
+<assignments/>
+<expression tag="content" type="constant">%MASTERPAGE_FOOTER_TEXT%</expression>
+<feature tag="format">
+<feature tag="common">
+<property name="style name" value=""/>
+<property name="masterpage" value=""/>
+<property name="force page change" value=""/>
+<property name="heading level offset" value=""/>
+<property name="target region" value=""/>
+</feature>
+<feature tag="date">
+<property name="date pattern" value=""/>
+</feature>
+<feature tag="data">
+<property name="data formatting" value=""/>
+</feature>
+<feature tag="list">
+<property name="list indent" value=""/>
+</feature>
+<feature tag="image">
+<feature tag="image size">
+<property name="image width" value=""/>
+<property name="image height" value=""/>
+<property name="image max width" value=""/>
+<property name="image max height" value=""/>
+</feature>
+</feature>
+<feature tag="font">
+<property name="font color" value=""/>
+<property name="font size" value=""/>
+<property name="font family" value=""/>
+<property name="bold" value=""/>
+<property name="italic" value=""/>
+<property name="direction" value=""/>
+</feature>
+<feature tag="character">
+<property name="character spacing" value=""/>
+<property name="character position" value=""/>
+<property name="character kerning" value=""/>
+<property name="character scale" value=""/>
+</feature>
+<feature tag="effects">
+<property name="superscript" value=""/>
+<property name="subscript" value=""/>
+<property name="shadow" value=""/>
+<property name="outline" value=""/>
+<property name="emboss" value=""/>
+<property name="engrave" value=""/>
+<property name="small caps" value=""/>
+<property name="hidden" value=""/>
+<property name="all caps" value=""/>
+</feature>
+<feature tag="line">
+<property name="underline" value=""/>
+<property name="underline color" value=""/>
+<property name="overline" value=""/>
+<property name="strikethrough" value=""/>
+</feature>
+<feature tag="border">
+<feature tag="border margin">
+<property name="all borders margin" value=""/>
+<property name="right border margin" value=""/>
+<property name="left border margin" value=""/>
+</feature>
+<feature tag="border color">
+<property name="all borders color" value=""/>
+<property name="top border color" value=""/>
+<property name="right border color" value=""/>
+<property name="bottom border color" value=""/>
+<property name="left border color" value=""/>
+</feature>
+<feature tag="border style">
+<property name="all borders style" value=""/>
+<property name="top border style" value=""/>
+<property name="right border style" value=""/>
+<property name="bottom border style" value=""/>
+<property name="left border style" value=""/>
+</feature>
+<feature tag="border width">
+<property name="all borders width" value=""/>
+<property name="top border width" value=""/>
+<property name="right border width" value=""/>
+<property name="bottom border width" value=""/>
+<property name="left border width" value=""/>
+</feature>
+</feature>
+<feature tag="color">
+<property name="text background color" value=""/>
+</feature>
+</feature>
+<feature tag="metadata">
+<property name="name" value=""/>
+<property name="description">
+<expression type="constant"/>
+</property>
+</feature>
+</element>
+<feature tag="format">
+<feature tag="common">
+<property name="style name" value=""/>
+<property name="masterpage" value=""/>
+<property name="force page change" value=""/>
+<property name="heading level offset" value=""/>
+<property name="target region" value=""/>
+</feature>
+<feature tag="font">
+<property name="font color" value=""/>
+<property name="font size" value=""/>
+<property name="font family" value=""/>
+<property name="bold" value=""/>
+<property name="italic" value=""/>
+<property name="direction" value=""/>
+</feature>
+<feature tag="character">
+<property name="character spacing" value=""/>
+<property name="character position" value=""/>
+<property name="character kerning" value=""/>
+<property name="character scale" value=""/>
+</feature>
+<feature tag="effects">
+<property name="superscript" value=""/>
+<property name="subscript" value=""/>
+<property name="shadow" value=""/>
+<property name="outline" value=""/>
+<property name="emboss" value=""/>
+<property name="engrave" value=""/>
+<property name="small caps" value=""/>
+<property name="hidden" value=""/>
+<property name="all caps" value=""/>
+</feature>
+<feature tag="line">
+<property name="underline" value=""/>
+<property name="underline color" value=""/>
+<property name="overline" value=""/>
+<property name="strikethrough" value=""/>
+</feature>
+<feature tag="border">
+<feature tag="border margin">
+<property name="all borders margin" value=""/>
+<property name="top border margin" value=""/>
+<property name="right border margin" value=""/>
+<property name="bottom border margin" value=""/>
+<property name="left border margin" value=""/>
+</feature>
+<feature tag="border color">
+<property name="all borders color" value=""/>
+<property name="top border color" value=""/>
+<property name="right border color" value=""/>
+<property name="bottom border color" value=""/>
+<property name="left border color" value=""/>
+</feature>
+<feature tag="border style">
+<property name="all borders style" value=""/>
+<property name="top border style" value=""/>
+<property name="right border style" value=""/>
+<property name="bottom border style" value=""/>
+<property name="left border style" value=""/>
+</feature>
+<feature tag="border width">
+<property name="all borders width" value=""/>
+<property name="top border width" value=""/>
+<property name="right border width" value=""/>
+<property name="bottom border width" value=""/>
+<property name="left border width" value=""/>
+</feature>
+</feature>
+<feature tag="padding">
+<property name="all paragraph paddings" value=""/>
+<property name="top paragraph padding" value=""/>
+<property name="right paragraph padding" value=""/>
+<property name="bottom paragraph padding" value=""/>
+<property name="left paragraph padding" value=""/>
+</feature>
+<feature tag="color">
+<property name="paragraph background color" value=""/>
+<property name="paragraph foreground color" value=""/>
+<property name="paragraph foreground density" value=""/>
+</feature>
+<feature tag="alignment">
+<property name="paragraph alignment" value="center"/>
+</feature>
+<feature tag="indentation">
+<property name="first line indent" value=""/>
+<property name="hanging indent" value=""/>
+<property name="left indent" value=""/>
+<property name="right indent" value=""/>
+</feature>
+<feature tag="pagination">
+<property name="widow/orphan control" value=""/>
+<property name="keep lines togheter" value=""/>
+<property name="keep with next" value=""/>
+<property name="page break before" value=""/>
+</feature>
+<feature tag="spacing">
+<property name="before spacing" value=""/>
+<property name="after spacing" value=""/>
+<property name="multiple line spacing" value=""/>
+<property name="word space" value=""/>
+<property name="same style paragraph spacing" value=""/>
+</feature>
+<feature tag="level">
+<property name="level number" value=""/>
+<property name="level indent" value=""/>
+</feature>
+<feature tag="numbering">
+<feature tag="numbering common">
+<property name="numbering restart" value=""/>
+<property name="numbering style" value=""/>
+<property name="numbering alignment" value=""/>
+<property name="numbering indent" value=""/>
+</feature>
+<feature tag="numbering font">
+<property name="numbering font color" value=""/>
+<property name="numbering font size" value=""/>
+<property name="numbering font family" value=""/>
+<property name="numbering bold" value=""/>
+<property name="numbering italic" value=""/>
+</feature>
+<feature tag="numbering character">
+<property name="numbering character position" value=""/>
+<property name="numbering character spacing" value=""/>
+<property name="numbering character scale" value=""/>
+<property name="numbering character kerning" value=""/>
+</feature>
+<feature tag="numbering effects">
+<property name="numbering superscript" value=""/>
+<property name="numbering subscript" value=""/>
+<property name="numbering shadow" value=""/>
+<property name="numbering outline" value=""/>
+<property name="numbering emboss" value=""/>
+<property name="numbering engrave" value=""/>
+<property name="numbering small caps" value=""/>
+<property name="numbering hidden" value=""/>
+<property name="numbering all caps" value=""/>
+</feature>
+<feature tag="numbering line">
+<property name="numbering underline" value=""/>
+<property name="numbering underline color" value=""/>
+<property name="numbering overline" value=""/>
+<property name="numbering strikethrough" value=""/>
+</feature>
+</feature>
+</feature>
+<feature tag="metadata">
+<property name="name" value=""/>
+<property name="description">
+<expression type="constant"/>
+</property>
+</feature>
+</element>
+<feature tag="format">
+<feature tag="common">
+<property name="style name" value=""/>
+</feature>
+<feature tag="specific">
+<property name="footer from bottom" value=""/>
+<property name="same as previous" value="false"/>
+</feature>
+<feature tag="font">
+<property name="font color" value=""/>
+<property name="font size" value=""/>
+<property name="font family" value=""/>
+<property name="bold" value=""/>
+<property name="italic" value=""/>
+</feature>
+<feature tag="character">
+<property name="character spacing" value=""/>
+<property name="character position" value=""/>
+<property name="character kerning" value=""/>
+<property name="character scale" value=""/>
+</feature>
+<feature tag="effects">
+<property name="superscript" value=""/>
+<property name="subscript" value=""/>
+<property name="shadow" value=""/>
+<property name="outline" value=""/>
+<property name="emboss" value=""/>
+<property name="engrave" value=""/>
+<property name="small caps" value=""/>
+<property name="hidden" value=""/>
+<property name="all caps" value=""/>
+</feature>
+<feature tag="line">
+<property name="underline" value=""/>
+<property name="underline color" value=""/>
+<property name="overline" value=""/>
+<property name="strikethrough" value=""/>
+</feature>
+</feature>
+<feature tag="metadata">
+<property name="name" value=""/>
+<property name="description">
+<expression type="constant"/>
+</property>
+</feature>
+</element>
+</element>
+<feature tag="format">
+<feature tag="specific">
+<property name="page orientation" value="%MASTERPAGE_ORIENTATION%"/>
+<property name="page vertical alignment" value=""/>
+<property name="same as previous" value=""/>
+</feature>
+<feature tag="margin">
+<property name="all page margins" value=""/>
+<property name="top page margin" value=""/>
+<property name="left page margin" value=""/>
+<property name="right page margin" value=""/>
+<property name="bottom page margin" value=""/>
+<property name="gutter" value=""/>
+</feature>
+<feature tag="page border">
+<feature tag="options">
+<property name="border distance reference" value=""/>
+<property name="display in front" value=""/>
+<property name="surround header" value=""/>
+<property name="surround footer" value=""/>
+<property name="page borders apply option" value=""/>
+</feature>
+<feature tag="margin">
+<property name="all page borders margin" value=""/>
+<property name="top page border margin" value=""/>
+<property name="left page border margin" value=""/>
+<property name="right page border margin" value=""/>
+<property name="bottom page border margin" value=""/>
+</feature>
+<feature tag="color">
+<property name="all page borders color" value=""/>
+<property name="top page border color" value=""/>
+<property name="right page border color" value=""/>
+<property name="bottom page border color" value=""/>
+<property name="left page border color" value=""/>
+</feature>
+<feature tag="style">
+<property name="all page borders style" value=""/>
+<property name="top page border style" value=""/>
+<property name="right page border style" value=""/>
+<property name="bottom page border style" value=""/>
+<property name="left page border style" value=""/>
+</feature>
+<feature tag="width">
+<property name="all page borders width" value=""/>
+<property name="top page border width" value=""/>
+<property name="right page border width" value=""/>
+<property name="bottom page border width" value=""/>
+<property name="left page border width" value=""/>
+</feature>
+</feature>
+<feature tag="color">
+<property name="page color" value=""/>
+</feature>
+<feature tag="size">
+<property name="paper size" value=""/>
+<property name="paper height" value=""/>
+<property name="paper width" value=""/>
+</feature>
+<feature tag="watermark">
+<property name="watermark image" value=""/>
+<property name="watermark text" value=""/>
+<property name="font" value="Arial"/>
+<property name="color" value="D3D3D3"/>
+<property name="width" value="500"/>
+<property name="height" value="100"/>
+<property name="rotation" value="50"/>
+</feature>
+</feature>
+</masterpage>
+</masterpages>
+<styles>
+<style>
+<feature tag="definition">
+<property name="name" value="Title"/>
+</feature>
+<feature tag="format">
+<feature tag="text">
+<feature tag="font">
+<property name="bold" value="true"/>
+<property name="font size" value="18"/>
+</feature>
+</feature>
+</feature>
+</style>
+<style>
+<feature tag="definition">
+<property name="name" value="HeaderCell"/>
+</feature>
+<feature tag="format">
+<feature tag="text">
+<feature tag="font">
+<property name="bold" value="true"/>
+</feature>
+</feature>
+</feature>
+</style>
+<style>
+<feature tag="definition">
+<property name="name" value="LabelItalic"/>
+</feature>
+<feature tag="format">
+<feature tag="text">
+<feature tag="font">
+<property name="italic" value="true"/>
+</feature>
+<feature tag="line">
+<property name="underline" value="single"/>
+</feature>
+</feature>
+</feature>
+</style>
+<style>
+<feature tag="definition">
+<property name="name" value="LabelStrong"/>
+</feature>
+<feature tag="format">
+<feature tag="text">
+<feature tag="font">
+<property name="bold" value="true"/>
+</feature>
+<feature tag="line">
+<property name="underline" value="single"/>
+</feature>
+</feature>
+</feature>
+</style>
+<style>
+<feature tag="definition">
+<property name="name" value="InternalHyperlink"/>
+</feature>
+<feature tag="format">
+<feature tag="text">
+<feature tag="font">
+<property name="font color" value="0000FF"/>
+</feature>
+<feature tag="line">
+<property name="underline" value="single"/>
+</feature>
+</feature>
+</feature>
+</style>
+</styles>
+<content>
+<element id="1" recursive="0" recursive_segments="1" tag="container">
+<data handle="$1" source="%SCHEMA_LABEL%">
+<query>%TITLE_LEVEL_QUERY%</query>
+<sort/>
+<filter/>
+<limit>0</limit>
+</data>
+<assignments/>
+<element id="12" recursive="0" recursive_segments="1" tag="paragraph">
+<assignments/>
+<element id="13" recursive="0" recursive_segments="1" tag="text">
+<assignments/>
+%TITLE_EXPRESSION%
+<feature tag="format">
+<feature tag="common">
+<property name="style name" value=""/>
+<property name="masterpage" value=""/>
+<property name="force page change" value=""/>
+<property name="heading level offset" value=""/>
+<property name="target region" value=""/>
+</feature>
+<feature tag="date">
+<property name="date pattern" value=""/>
+</feature>
+<feature tag="data">
+<property name="data formatting" value=""/>
+</feature>
+<feature tag="list">
+<property name="list indent" value=""/>
+</feature>
+<feature tag="image">
+<feature tag="image size">
+<property name="image width" value=""/>
+<property name="image height" value=""/>
+<property name="image max width" value=""/>
+<property name="image max height" value=""/>
+</feature>
+</feature>
+<feature tag="font">
+<property name="font color" value=""/>
+<property name="font size" value=""/>
+<property name="font family" value=""/>
+<property name="bold" value=""/>
+<property name="italic" value=""/>
+<property name="direction" value=""/>
+</feature>
+<feature tag="character">
+<property name="character spacing" value=""/>
+<property name="character position" value=""/>
+<property name="character kerning" value=""/>
+<property name="character scale" value=""/>
+</feature>
+<feature tag="effects">
+<property name="superscript" value=""/>
+<property name="subscript" value=""/>
+<property name="shadow" value=""/>
+<property name="outline" value=""/>
+<property name="emboss" value=""/>
+<property name="engrave" value=""/>
+<property name="small caps" value=""/>
+<property name="hidden" value=""/>
+<property name="all caps" value=""/>
+</feature>
+<feature tag="line">
+<property name="underline" value=""/>
+<property name="underline color" value=""/>
+<property name="overline" value=""/>
+<property name="strikethrough" value=""/>
+</feature>
+<feature tag="border">
+<feature tag="border margin">
+<property name="all borders margin" value=""/>
+<property name="right border margin" value=""/>
+<property name="left border margin" value=""/>
+</feature>
+<feature tag="border color">
+<property name="all borders color" value=""/>
+<property name="top border color" value=""/>
+<property name="right border color" value=""/>
+<property name="bottom border color" value=""/>
+<property name="left border color" value=""/>
+</feature>
+<feature tag="border style">
+<property name="all borders style" value=""/>
+<property name="top border style" value=""/>
+<property name="right border style" value=""/>
+<property name="bottom border style" value=""/>
+<property name="left border style" value=""/>
+</feature>
+<feature tag="border width">
+<property name="all borders width" value=""/>
+<property name="top border width" value=""/>
+<property name="right border width" value=""/>
+<property name="bottom border width" value=""/>
+<property name="left border width" value=""/>
+</feature>
+</feature>
+<feature tag="color">
+<property name="text background color" value=""/>
+</feature>
+</feature>
+<feature tag="metadata">
+<property name="name" value=""/>
+<property name="description">
+<expression type="constant"/>
+</property>
+</feature>
+</element>
+<feature tag="format">
+<feature tag="common">
+<property name="style name" value=""/>
+<property name="masterpage" value=""/>
+<property name="force page change" value=""/>
+<property name="heading level offset" value=""/>
+<property name="target region" value=""/>
+</feature>
+<feature tag="font">
+<property name="font color" value=""/>
+<property name="font size" value="18"/>
+<property name="font family" value=""/>
+<property name="bold" value="true"/>
+<property name="italic" value=""/>
+<property name="direction" value=""/>
+</feature>
+<feature tag="character">
+<property name="character spacing" value=""/>
+<property name="character position" value=""/>
+<property name="character kerning" value=""/>
+<property name="character scale" value=""/>
+</feature>
+<feature tag="effects">
+<property name="superscript" value=""/>
+<property name="subscript" value=""/>
+<property name="shadow" value=""/>
+<property name="outline" value=""/>
+<property name="emboss" value=""/>
+<property name="engrave" value=""/>
+<property name="small caps" value=""/>
+<property name="hidden" value=""/>
+<property name="all caps" value=""/>
+</feature>
+<feature tag="line">
+<property name="underline" value=""/>
+<property name="underline color" value=""/>
+<property name="overline" value=""/>
+<property name="strikethrough" value=""/>
+</feature>
+<feature tag="border">
+<feature tag="border margin">
+<property name="all borders margin" value=""/>
+<property name="top border margin" value=""/>
+<property name="right border margin" value=""/>
+<property name="bottom border margin" value=""/>
+<property name="left border margin" value=""/>
+</feature>
+<feature tag="border color">
+<property name="all borders color" value=""/>
+<property name="top border color" value=""/>
+<property name="right border color" value=""/>
+<property name="bottom border color" value=""/>
+<property name="left border color" value=""/>
+</feature>
+<feature tag="border style">
+<property name="all borders style" value=""/>
+<property name="top border style" value=""/>
+<property name="right border style" value=""/>
+<property name="bottom border style" value=""/>
+<property name="left border style" value=""/>
+</feature>
+<feature tag="border width">
+<property name="all borders width" value=""/>
+<property name="top border width" value=""/>
+<property name="right border width" value=""/>
+<property name="bottom border width" value=""/>
+<property name="left border width" value=""/>
+</feature>
+</feature>
+<feature tag="padding">
+<property name="all paragraph paddings" value=""/>
+<property name="top paragraph padding" value=""/>
+<property name="right paragraph padding" value=""/>
+<property name="bottom paragraph padding" value=""/>
+<property name="left paragraph padding" value=""/>
+</feature>
+<feature tag="color">
+<property name="paragraph background color" value=""/>
+<property name="paragraph foreground color" value=""/>
+<property name="paragraph foreground density" value=""/>
+</feature>
+<feature tag="alignment">
+<property name="paragraph alignment" value="center"/>
+</feature>
+<feature tag="indentation">
+<property name="first line indent" value=""/>
+<property name="hanging indent" value=""/>
+<property name="left indent" value=""/>
+<property name="right indent" value=""/>
+</feature>
+<feature tag="pagination">
+<property name="widow/orphan control" value=""/>
+<property name="keep lines togheter" value=""/>
+<property name="keep with next" value=""/>
+<property name="page break before" value=""/>
+</feature>
+<feature tag="spacing">
+<property name="before spacing" value=""/>
+<property name="after spacing" value=""/>
+<property name="multiple line spacing" value=""/>
+<property name="word space" value=""/>
+<property name="same style paragraph spacing" value=""/>
+</feature>
+<feature tag="level">
+<property name="level number" value=""/>
+<property name="level indent" value=""/>
+</feature>
+<feature tag="numbering">
+<feature tag="numbering common">
+<property name="numbering restart" value=""/>
+<property name="numbering style" value=""/>
+<property name="numbering alignment" value=""/>
+<property name="numbering indent" value=""/>
+</feature>
+<feature tag="numbering font">
+<property name="numbering font color" value=""/>
+<property name="numbering font size" value=""/>
+<property name="numbering font family" value=""/>
+<property name="numbering bold" value=""/>
+<property name="numbering italic" value=""/>
+</feature>
+<feature tag="numbering character">
+<property name="numbering character position" value=""/>
+<property name="numbering character spacing" value=""/>
+<property name="numbering character scale" value=""/>
+<property name="numbering character kerning" value=""/>
+</feature>
+<feature tag="numbering effects">
+<property name="numbering superscript" value=""/>
+<property name="numbering subscript" value=""/>
+<property name="numbering shadow" value=""/>
+<property name="numbering outline" value=""/>
+<property name="numbering emboss" value=""/>
+<property name="numbering engrave" value=""/>
+<property name="numbering small caps" value=""/>
+<property name="numbering hidden" value=""/>
+<property name="numbering all caps" value=""/>
+</feature>
+<feature tag="numbering line">
+<property name="numbering underline" value=""/>
+<property name="numbering underline color" value=""/>
+<property name="numbering overline" value=""/>
+<property name="numbering strikethrough" value=""/>
+</feature>
+</feature>
+</feature>
+<feature tag="metadata">
+<property name="name" value=""/>
+<property name="description">
+<expression type="constant"/>
+</property>
+</feature>
+</element>
+<feature tag="format">
+<feature tag="common">
+<property name="masterpage" value=""/>
+<property name="force page change" value=""/>
+<property name="heading level offset" value=""/>
+<property name="target region" value=""/>
+</feature>
+<feature tag="font">
+<property name="direction" value=""/>
+</feature>
+</feature>
+<feature tag="metadata">
+<property name="name" value="Title"/>
+<property name="description">
+<expression type="constant"/>
+</property>
+</feature>
+</element>
+%TOC_CONTAINER%
+%PARAGRAPH_CONTAINER%
+%TABLE_CONTAINER%
+</content>
+</template>
+

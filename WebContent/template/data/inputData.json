@@ -1,0 +1,67 @@
+[{
+	"elementId": "57",
+	"replacement": "%TABLE_SINGLE_CELL_QUERY%",
+	"replaceElementId": true,
+	"replaceMap": {
+		"FullTag": "%TABLE_CELL_ATTRIBUTE_QUERY%"
+	}
+},{
+	"elementId": "52",
+	"replacement": "%TABLE_SINGLE_CELL_LABEL%",
+	"replaceElementId": true,
+	"replaceMap": {
+		"TABLE_CELL_ATTRIBUTE_LABEL": "%TABLE_CELL_ATTRIBUTE_LABEL%"
+	}
+},{
+	"elementId": "4",
+	"replacement": "%TABLE_CONTAINER%",
+	"replaceMap": {
+		"STATIC_TITLE": "%STATIC_TITLE%",
+		"REQPRO": "%SCHEMA_LABEL%",
+		"Project/Requirements/PRRequirement": "%DATA_LEVEL_QUERY%",
+		"STYLE_NAME": "%STYLE_NAME%",
+		"<expression tag=\"content\" type=\"constant\">%TITLE%</expression>": "%TITLE_EXPRESSION%"
+	}
+},
+
+
+{
+	"elementId": "37",
+	"replacement": "%PARAGRAPH_SINGLE_ROW%",
+	"replaceElementId": true,
+	"replaceMap": {
+		"PARAGRAPH_ATTRIBUTE_LABEL": "%PARAGRAPH_ATTRIBUTE_LABEL%",
+		"GUID": "%PARAGRAPH_ATTRIBUTE_QUERY%"
+	}
+},{
+	"elementId": "3",
+	"replacement": "%PARAGRAPH_CONTAINER%",
+	"replaceMap": {
+		"%TITLE%": "%TITLE%",
+		"REQPRO": "%SCHEMA_LABEL%",
+		"Project/Requirements/PRRequirement": "%DATA_LEVEL_QUERY%",
+		"%QUERY_CONTEXT%" : "$4",
+		"STYLE_NAME": "%STYLE_NAME%",
+		"<expression tag=\"content\" type=\"constant\">%TITLE%</expression>": "%TITLE_EXPRESSION%"
+	}
+},
+
+
+{
+	"elementId": "2",
+	"replacement": "%TOC_CONTAINER%"
+},
+
+
+{
+	"replaceMap": {
+		"REQPRO": "%SCHEMA_LABEL%",
+		"Project": "%TITLE_LEVEL_QUERY%",
+		"%QUERY_CONTEXT%" : "$1",
+		"<expression tag=\"content\" type=\"constant\">%TITLE%</expression>": "%TITLE_EXPRESSION%",
+		"MASTERPAGE_HEADER_TEXT": "%MASTERPAGE_HEADER_TEXT%",
+		"MASTERPAGE_FOOTER_TEXT": "%MASTERPAGE_FOOTER_TEXT%",
+		"MASTERPAGE_ORIENTATION": "%MASTERPAGE_ORIENTATION%"
+	}
+}
+]

@@ -1,0 +1,1 @@
+<expression tag="content" type="data" context="%QUERY_CONTEXT%">%TITLE%</expression>
