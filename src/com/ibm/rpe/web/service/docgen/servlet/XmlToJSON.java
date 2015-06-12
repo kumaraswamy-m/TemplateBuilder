@@ -21,10 +21,10 @@ import javax.ws.rs.core.Response;
 import javax.ws.rs.core.Response.Status;
 import javax.ws.rs.core.UriBuilder;
 
+import org.apache.commons.io.IOUtils;
 import org.json.JSONObject;
 import org.json.XML;
 
-import com.ibm.rpe.web.service.docgen.utils.FileUtils;
 import com.ibm.rpe.web.service.docgen.utils.JSONUtils;
 import com.sun.jersey.api.client.Client;
 import com.sun.jersey.api.client.ClientResponse;
@@ -54,7 +54,7 @@ public class XmlToJSON
 				return Response.serverError().status(Status.BAD_REQUEST).entity(clientResponse.getEntity(String.class)).build();
 			}
 			InputStream xmlStream = clientResponse.getEntityInputStream();
-			String xmlAsString = FileUtils.getStringFromInputStream(xmlStream);
+			String xmlAsString = IOUtils.toString(xmlStream, "UTF-8");
 
 			return Response.ok().entity( getXMLfromJson(xmlAsString)).build();
 		}

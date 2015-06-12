@@ -25,6 +25,8 @@ import javax.ws.rs.core.Response;
 import javax.ws.rs.core.Response.Status;
 import javax.ws.rs.core.UriBuilder;
 
+import org.apache.commons.io.IOUtils;
+
 import com.ibm.rpe.web.service.docgen.utils.ExportUtil;
 import com.ibm.rpe.web.service.docgen.utils.FileUtils;
 import com.ibm.rpe.web.service.docgen.utils.JSONUtils;
@@ -58,7 +60,7 @@ public class XmlToXsd
 				return Response.serverError().status(Status.BAD_REQUEST).entity(clientResponse.getEntity(String.class)).build();
 			}
 			InputStream xmlStream = clientResponse.getEntityInputStream();
-			String xmlAsString = FileUtils.getStringFromInputStream(xmlStream);
+			String xmlAsString = IOUtils.toString(xmlStream, "UTF-8");
 
 			String workingDirectory = System.getProperty("java.io.tmpdir") + "schema_" + UUID.randomUUID().toString() + File.separator; //$NON-NLS-1$ //$NON-NLS-2$
 
