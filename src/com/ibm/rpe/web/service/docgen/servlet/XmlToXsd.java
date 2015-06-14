@@ -10,6 +10,7 @@ package com.ibm.rpe.web.service.docgen.servlet;
 
 import java.io.BufferedWriter;
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.FileWriter;
 import java.io.InputStream;
 import java.util.UUID;
@@ -27,7 +28,6 @@ import javax.ws.rs.core.UriBuilder;
 
 import org.apache.commons.io.IOUtils;
 
-import com.ibm.rpe.web.service.docgen.utils.ExportUtil;
 import com.ibm.rpe.web.service.docgen.utils.FileUtils;
 import com.ibm.rpe.web.service.docgen.utils.JSONUtils;
 import com.ibm.rpe.web.service.docgen.utils.XsdGeneration;
@@ -88,7 +88,7 @@ public class XmlToXsd
 				e2.printStackTrace();
 			}
 			// return Response.ok().build();
-			xsd = ExportUtil.readFile(new File(xsdFilePath));
+			xsd = IOUtils.toString(new FileInputStream(xsdFilePath), "UTF-8");
 			// TODO Delete workingDirectory directory
 			return Response.ok().entity(xsd).build();
 		}

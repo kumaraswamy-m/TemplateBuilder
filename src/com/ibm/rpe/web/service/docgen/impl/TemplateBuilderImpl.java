@@ -10,7 +10,7 @@ package com.ibm.rpe.web.service.docgen.impl;
 
 import java.io.File;
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.net.URISyntaxException;
 import java.util.HashMap;
 import java.util.List;
@@ -21,9 +21,10 @@ import java.util.UUID;
 import javax.ws.rs.core.Response;
 import javax.ws.rs.core.UriBuilder;
 
+import org.apache.commons.io.IOUtils;
+
 import com.ibm.rpe.web.service.docgen.api.model.Template;
 import com.ibm.rpe.web.service.docgen.api.model.Template.Container;
-import com.ibm.rpe.web.service.docgen.utils.ExportUtil;
 import com.ibm.rpe.web.service.docgen.utils.FileUtils;
 import com.ibm.rpe.web.service.docgen.utils.JSONUtils;
 import com.ibm.rpe.web.service.docgen.utils.TemplateConstants;
@@ -206,7 +207,7 @@ public class TemplateBuilderImpl
 		System.out.println("Doc spec: " + docSpec);
 	}
 
-	private static String replacePlaceHolders(Map<String, String> params, String xmlPath) throws FileNotFoundException
+	private static String replacePlaceHolders(Map<String, String> params, String xmlPath) throws IOException
 	{
 
 		String cellFormat = readTemplatsFile(xmlPath);
@@ -228,7 +229,7 @@ public class TemplateBuilderImpl
 	}
 
 	private static String getTitleRow(String type, String titleInput, boolean isQuery, Map<String, String> childParams)
-			throws FileNotFoundException
+			throws IOException
 	{
 		String title = "";
 		if (titleInput != null && !titleInput.isEmpty())
@@ -263,13 +264,14 @@ public class TemplateBuilderImpl
 
 	public static void main(String args[]) throws URISyntaxException, Exception
 	{
-		String xmlPath = "https://rpe.mybluemix.net/rpeng/examples/data/requisitepro.xml";
+		String xmlPath = "https://rpe.mybluemix.net/examples/data/requisitepro.xml";
 		String xmlFilePath = downloadFile(xmlPath);
 
 		TemplateBuilderImpl generator = new TemplateBuilderImpl();
 
-		//generator.templatesHome = "D:\\ks\\work\\RPE_2012\\Repository\\ws_rpe_main_stream_jee\\ws\\TemplateBuilder\\WebContent\\template";
-		
+		// generator.templatesHome =
+		// "D:\\ks\\work\\RPE_2012\\Repository\\ws_rpe_main_stream_jee\\ws\\TemplateBuilder\\WebContent\\template";
+
 		generator.templatesHome = "C:\\Users\\IBM_ADMIN\\workspace_new\\TemplateBuilder\\WebContent\\template";
 		String templateJson = readTemplatsFile("/data/template.json");
 
@@ -279,9 +281,9 @@ public class TemplateBuilderImpl
 		generator.generateTemplate(templatesHome, template);
 	}
 
-	private static String readTemplatsFile(String templateFile) throws FileNotFoundException
+	private static String readTemplatsFile(String templateFile) throws IOException
 	{
-		return ExportUtil.readFile(new FileInputStream(templatesHome + templateFile));
+		return IOUtils.toString(new FileInputStream(templatesHome + templateFile), "UTF-8");
 	}
 
 	private static String downloadFile(String path) throws Exception
@@ -293,7 +295,7 @@ public class TemplateBuilderImpl
 
 			if (path.toUpperCase().startsWith("FILE:") || (new File(path)).exists())
 			{
-				data = ExportUtil.readFile(new File(path));
+				data = IOUtils.toString(new FileInputStream(path), "UTF-8");
 			}
 			else if (path.toUpperCase().startsWith("HTTP"))
 			{

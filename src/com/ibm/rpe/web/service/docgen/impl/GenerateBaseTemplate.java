@@ -33,6 +33,7 @@ import javax.xml.transform.TransformerFactory;
 import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.stream.StreamResult;
 
+import org.apache.commons.io.IOUtils;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
@@ -40,7 +41,6 @@ import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
 
 import com.ibm.rpe.web.service.docgen.api.model.BaseTemplateInput;
-import com.ibm.rpe.web.service.docgen.utils.ExportUtil;
 import com.ibm.rpe.web.service.docgen.utils.FileUtils;
 import com.ibm.rpe.web.service.docgen.utils.JSONUtils;
 import com.ibm.rpe.web.service.docgen.utils.TemplateConstants;
@@ -103,7 +103,7 @@ public class GenerateBaseTemplate
 			}
 			else
 			{
-				String baseTemplateXmlString = replace(ExportUtil.readFile(new File(baseTemplatePath)), data.getReplaceMap());
+				String baseTemplateXmlString = replace(IOUtils.toString(new FileInputStream(baseTemplatePath), "UTF-8"), data.getReplaceMap());
 				baseTemplateXmlString = replaceSchemaUrl(baseTemplateXmlString);
 				FileUtils.writeFile(baseTemplatePath, baseTemplateXmlString);
 			}
@@ -293,9 +293,9 @@ public class GenerateBaseTemplate
 		}
 	}
 
-	private static String readTemplatsFile(String templateFile) throws FileNotFoundException
+	private static String readTemplatsFile(String templateFile) throws IOException
 	{
-		return ExportUtil.readFile(new FileInputStream(templatesHome + templateFile));
+		return IOUtils.toString(new FileInputStream(templatesHome + templateFile), "UTF-8");
 	}
 
 	public static void main(String[] args) throws ParserConfigurationException, SAXException, IOException, Exception
