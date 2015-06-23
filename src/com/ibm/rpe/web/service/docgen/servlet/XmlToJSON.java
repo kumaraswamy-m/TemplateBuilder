@@ -33,7 +33,7 @@ import com.sun.jersey.api.client.WebResource;
 /**
  * Servlet implementation class converting xml to json
  */
-@Path("/xmltojson")
+@Path("/utils/xmltojson")
 public class XmlToJSON
 {
 

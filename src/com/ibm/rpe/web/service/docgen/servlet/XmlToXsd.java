@@ -38,7 +38,7 @@ import com.sun.jersey.api.client.WebResource;
 /**
  * Servlet implementation class converting xml to xsd
  */
-@Path("/xmltoxsd")
+@Path("/utils/xmltoxsd")
 public class XmlToXsd
 {
 
